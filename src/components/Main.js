@@ -1,7 +1,7 @@
 
-function Main() {
+function Main(props) {
     return (
-        <div className="main-section">
+        <div className={props.darkMode ? "main-section dark" : "main-section"} >
             <h1 className="main-section-title">Fun facts about React</h1>
             <ul>
                 <li>Was first released in 2013</li>
